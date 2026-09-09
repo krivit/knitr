@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="generator" content="litedown 0.10.1">
+<meta name="generator" content="litedown 0.11.3">
 <title>News</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/css/default.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/css/article.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/css/copy-button.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/css/heading-anchor.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/css/pages.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/css/site.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/css/prism-xcode.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/css/default.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/css/article.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/css/copy-button.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/css/heading-anchor.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/css/pages.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/css/site.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/css/prism-xcode.min.css">
 </head>
 <body>
 <nav><p><a href="index.html">Home</a>
@@ -25,10 +25,12 @@
 <div class="body">
 <div id="TOC">
 <ul>
+<li><a href="#sec:knitr-1-53">knitr 1.53</a></li>
 <li><a href="#sec:knitr-1-52">knitr 1.52</a>
 <ul>
 <li><a href="#sec:new-features_1">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_1">BUG FIXES</a></li>
+<li><a href="#sec:major-changes_1">MAJOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-51">knitr 1.51</a>
@@ -48,7 +50,7 @@
 <ul>
 <li><a href="#sec:new-features_4">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_3">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_1">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_2">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_3">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -68,7 +70,7 @@
 <ul>
 <li><a href="#sec:new-features_6">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_6">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_2">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_3">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_5">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -76,14 +78,14 @@
 <ul>
 <li><a href="#sec:new-features_7">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_7">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_3">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_4">MAJOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-44">knitr 1.44</a>
 <ul>
 <li><a href="#sec:new-features_8">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_8">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_4">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_5">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_6">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -97,7 +99,7 @@
 <li><a href="#sec:knitr-1-42">knitr 1.42</a>
 <ul>
 <li><a href="#sec:new-features_10">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_5">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_6">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_8">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_10">BUG FIXES</a></li>
 </ul>
@@ -117,14 +119,14 @@
 </li>
 <li><a href="#sec:knitr-1-39">knitr 1.39</a>
 <ul>
-<li><a href="#sec:major-changes_6">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_7">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_10">MINOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-38">knitr 1.38</a>
 <ul>
 <li><a href="#sec:new-features_13">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_7">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_8">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_11">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_13">BUG FIXES</a></li>
 </ul>
@@ -138,21 +140,21 @@
 </li>
 <li><a href="#sec:knitr-1-36">knitr 1.36</a>
 <ul>
-<li><a href="#sec:major-changes_8">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_9">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_15">BUG FIXES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-35">knitr 1.35</a>
 <ul>
 <li><a href="#sec:new-features_15">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_9">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_10">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_16">BUG FIXES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-34">knitr 1.34</a>
 <ul>
 <li><a href="#sec:new-features_16">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_10">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_11">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_13">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_17">BUG FIXES</a></li>
 </ul>
@@ -161,7 +163,7 @@
 <ul>
 <li><a href="#sec:new-features_17">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_18">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_11">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_12">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_14">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -176,7 +178,7 @@
 <ul>
 <li><a href="#sec:new-features_19">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_20">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_12">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_13">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_16">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -191,21 +193,21 @@
 <ul>
 <li><a href="#sec:new-features_21">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_22">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_13">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_14">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_18">MINOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-28">knitr 1.28</a>
 <ul>
 <li><a href="#sec:bug-fixes_23">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_14">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_15">MAJOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-27">knitr 1.27</a>
 <ul>
 <li><a href="#sec:new-features_22">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_24">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_15">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_16">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_19">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -218,14 +220,14 @@
 <li><a href="#sec:knitr-1-25">knitr 1.25</a>
 <ul>
 <li><a href="#sec:new-features_24">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_16">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_17">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_21">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_25">BUG FIXES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-24">knitr 1.24</a>
 <ul>
-<li><a href="#sec:major-changes_17">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_18">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_26">BUG FIXES</a></li>
 </ul>
 </li>
@@ -233,14 +235,14 @@
 <ul>
 <li><a href="#sec:new-features_25">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_27">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_18">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_19">MAJOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-22">knitr 1.22</a>
 <ul>
 <li><a href="#sec:new-features_26">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_28">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_19">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_20">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_22">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -248,7 +250,7 @@
 <ul>
 <li><a href="#sec:new-features_27">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_29">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_20">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_21">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_23">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -261,27 +263,27 @@
 <li><a href="#sec:knitr-1-19">knitr 1.19</a>
 <ul>
 <li><a href="#sec:new-features_29">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_21">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_22">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_31">BUG FIXES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-18">knitr 1.18</a>
 <ul>
 <li><a href="#sec:new-features_30">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_22">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_23">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_32">BUG FIXES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-17">knitr 1.17</a>
 <ul>
-<li><a href="#sec:major-changes_23">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_24">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_33">BUG FIXES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-16">knitr 1.16</a>
 <ul>
 <li><a href="#sec:new-features_31">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_24">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_25">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_34">BUG FIXES</a></li>
 </ul>
 </li>
@@ -294,7 +296,7 @@
 <li><a href="#sec:knitr-1-15">knitr 1.15</a>
 <ul>
 <li><a href="#sec:new-features_33">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_25">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_26">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_24">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_36">BUG FIXES</a></li>
 </ul>
@@ -303,7 +305,7 @@
 <ul>
 <li><a href="#sec:new-features_34">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_37">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_26">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_27">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_25">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -311,7 +313,7 @@
 <ul>
 <li><a href="#sec:new-features_35">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_38">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_27">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_28">MAJOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-12-3">knitr 1.12.3</a>
@@ -323,33 +325,33 @@
 <ul>
 <li><a href="#sec:new-features_36">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_40">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_28">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_29">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_26">MINOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-11">knitr 1.11</a>
 <ul>
 <li><a href="#sec:new-features_37">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_29">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_30">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_41">BUG FIXES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-10-5">knitr 1.10.5</a>
 <ul>
-<li><a href="#sec:major-changes_30">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_31">MAJOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-10">knitr 1.10</a>
 <ul>
 <li><a href="#sec:new-features_38">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_31">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_32">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_42">BUG FIXES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-9">knitr 1.9</a>
 <ul>
 <li><a href="#sec:new-features_39">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_32">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_33">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_27">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_43">BUG FIXES</a></li>
 </ul>
@@ -364,7 +366,7 @@
 <ul>
 <li><a href="#sec:new-features_41">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_45">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_33">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_34">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_28">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -372,7 +374,7 @@
 <ul>
 <li><a href="#sec:new-features_42">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_46">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_34">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_35">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_29">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -380,7 +382,7 @@
 <ul>
 <li><a href="#sec:new-features_43">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_47">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_35">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_36">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_30">MINOR CHANGES</a></li>
 </ul>
 </li>
@@ -388,7 +390,7 @@
 <ul>
 <li><a href="#sec:note">NOTE</a></li>
 <li><a href="#sec:new-features_44">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_36">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_37">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_31">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_48">BUG FIXES</a></li>
 </ul>
@@ -397,7 +399,7 @@
 <ul>
 <li><a href="#sec:new-features_45">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_49">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_37">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_38">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_32">MINOR CHANGES</a></li>
 <li><a href="#sec:maintenance">MAINTENANCE</a></li>
 <li><a href="#sec:misc_1">MISC</a></li>
@@ -407,7 +409,7 @@
 <ul>
 <li><a href="#sec:new-features_46">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_50">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_38">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_39">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_33">MINOR CHANGES</a></li>
 <li><a href="#sec:documentation_1">DOCUMENTATION</a></li>
 </ul>
@@ -416,14 +418,14 @@
 <ul>
 <li><a href="#sec:new-features_47">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_51">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_39">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_40">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_34">MINOR CHANGES</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-1-0">knitr 1.0</a>
 <ul>
 <li><a href="#sec:new-features_48">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_40">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_41">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_35">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_52">BUG FIXES</a></li>
 <li><a href="#sec:documentation_2">Documentation</a></li>
@@ -432,7 +434,7 @@
 <li><a href="#sec:knitr-0-9">knitr 0.9</a>
 <ul>
 <li><a href="#sec:new-features_49">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_41">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_42">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_36">MINOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_53">BUG FIXES</a></li>
 <li><a href="#sec:documentation_3">DOCUMENTATION</a></li>
@@ -442,7 +444,7 @@
 <ul>
 <li><a href="#sec:new-features_50">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_54">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_42">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_43">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_37">MINOR CHANGES</a></li>
 <li><a href="#sec:documentation_4">DOCUMENTATION</a></li>
 </ul>
@@ -451,14 +453,14 @@
 <ul>
 <li><a href="#sec:new-features_51">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_55">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_43">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_44">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_38">MINOR CHANGES</a></li>
 <li><a href="#sec:documentation_5">DOCUMENTATION</a></li>
 </ul>
 </li>
 <li><a href="#sec:knitr-0-6-3">knitr 0.6.3</a>
 <ul>
-<li><a href="#sec:major-changes_44">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_45">MAJOR CHANGES</a></li>
 <li><a href="#sec:new-features_52">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_56">BUG FIXES</a></li>
 <li><a href="#sec:misc_2">MISC</a></li>
@@ -468,7 +470,7 @@
 <ul>
 <li><a href="#sec:new-features_53">NEW FEATURES</a></li>
 <li><a href="#sec:bug-fixes_57">BUG FIXES</a></li>
-<li><a href="#sec:major-changes_45">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_46">MAJOR CHANGES</a></li>
 <li><a href="#sec:minor-changes_39">MINOR CHANGES</a></li>
 <li><a href="#sec:documentation_6">DOCUMENTATION</a></li>
 </ul>
@@ -476,7 +478,7 @@
 <li><a href="#sec:knitr-0-5">knitr 0.5</a>
 <ul>
 <li><a href="#sec:new-features_54">NEW FEATURES</a></li>
-<li><a href="#sec:major-changes_46">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_47">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_58">BUG FIXES</a></li>
 <li><a href="#sec:misc_3">MISC</a></li>
 </ul>
@@ -494,7 +496,7 @@
 <ul>
 <li><a href="#sec:new-features_56">NEW FEATURES</a></li>
 <li><a href="#sec:minor-changes_41">MINOR CHANGES</a></li>
-<li><a href="#sec:major-changes_47">MAJOR CHANGES</a></li>
+<li><a href="#sec:major-changes_48">MAJOR CHANGES</a></li>
 <li><a href="#sec:bug-fixes_60">BUG FIXES</a></li>
 <li><a href="#sec:misc_5">MISC</a></li>
 </ul>
@@ -513,20 +515,48 @@
 </li>
 </ul>
 </div>
+<h2 id="sec:knitr-1-53" class="unnumbered">knitr 1.53</h2>
 <h2 id="sec:knitr-1-52" class="unnumbered">knitr 1.52</h2>
 <h3 id="sec:new-features_1" class="unnumbered">NEW FEATURES</h3>
 <ul>
 <li>
+<p>Added a new chunk option <code>fig.note</code> to add a note (e.g., a source or explanatory note) below a figure, separate from its caption (thanks, <a href="https://github.com/turbanisch">@turbanisch</a>, <a href="https://github.com/yihui/knitr/issues/2022">#2022</a>). It works for LaTeX/PDF, HTML, and Typst output. For LaTeX, the note is emitted via a <code>\figurenote{}</code> command inside the figure environment; a default definition is provided (footnotesize italic) that you may override in the preamble, e.g., <code>\newcommand{\figurenote}[1]{\floatfoot{#1}}</code> (with the <strong>floatrow</strong> package). For HTML, the note is placed in <code>&lt;p class=&quot;figure-note&quot;&gt;</code> inside the figure <code>&lt;div&gt;</code>, which you can style with CSS.</p>
+</li>
+<li>
 <p>Added support for a new input format <code>.Rtyp</code> for the <a href="https://typst.app">Typst</a> typesetting system (thanks, <a href="https://github.com/blset">@blset</a> <a href="https://github.com/yihui/knitr/issues/2401">#2401</a>, <a href="https://github.com/aksigkvgithub">@aksigkvgithub</a> <a href="https://github.com/yihui/knitr/issues/2283">#2283</a>). You can use code chunks and inline R expressions in <code>.Rtyp</code> files, knit them via <code>knitr::knit()</code> to <code>.typ</code> output, or compile to PDF directly via <code>knit2pdf('input.Rtyp')</code>. See <a href="https://github.com/yihui/knitr-examples/blob/master/128-minimal.Rtyp">https://github.com/yihui/knitr-examples/blob/master/128-minimal.Rtyp</a> for a minimal example.</p>
 </li>
 <li>
+<p>Added a <code>knitr::rtyp</code> vignette engine to build <code>.Rtyp</code> vignettes to PDF via Typst, so packages no longer need to register their own engine for this purpose (thanks, <a href="https://github.com/ggrothendieck">@ggrothendieck</a>, <a href="https://github.com/yihui/knitr/issues/2447">#2447</a>).</p>
+</li>
+<li>
+<p><code>hook_plot_tex()</code> now respects the chunk option <code>animation.hook</code> (or the package option <code>animation.fun</code>) when it is set to a function of your own, and calls it to generate the LaTeX code for a chunk with <code>fig.show = 'animate'</code> instead of the default <code>\animategraphics{}</code>. This makes the LaTeX plot hook extensible in the same way as <code>hook_plot_html()</code>, which has always supported these options, and allows for LaTeX packages other than <strong>animate</strong> to be used for animations, e.g. <strong>xmpmulti</strong> for beamer overlays. The built-in hooks such as <code>hook_ffmpeg_html()</code> generate HTML and continue to be ignored for LaTeX output, so this does not change the output of existing documents (thanks, <a href="https://github.com/jolars">@jolars</a> <a href="https://github.com/yihui/knitr/issues/2452">#2452</a>).</p>
+</li>
+<li>
 <p>Added support for <code>ragg::agg_webp()</code> as a graphics device for WebP output (thanks, <a href="https://github.com/heavywatal">@heavywatal</a>, <a href="https://github.com/yihui/knitr/issues/2434">#2434</a>). To use this device, set <code>dev = 'agg_webp'</code> in the chunk options. This device is available in <strong>ragg</strong> &gt;= 1.5.0.</p>
+</li>
+<li>
+<p>The chunk option <code>dev.args</code> can now customize the <code>dev = 'gridSVG'</code> device. Arguments are passed to both <code>grDevices::svg()</code> (e.g., <code>pointsize</code>) and <code>gridSVG::grid.export()</code> (e.g., <code>strict</code>), with each function receiving only the arguments it recognizes (thanks, <a href="https://github.com/deepayan">@deepayan</a>, <a href="https://github.com/yihui/knitr/issues/2450">#2450</a>, <a href="https://github.com/yihui/knitr/issues/2451">#2451</a>).</p>
 </li>
 </ul>
 <h3 id="sec:bug-fixes_1" class="unnumbered">BUG FIXES</h3>
 <ul>
 <li>
+<p>Figure captions are no longer dropped when a single chunk produces multiple captioned figures for Markdown-based output (e.g., HTML or PDF via Pandoc). Previously, consecutive images were emitted in one paragraph (<code>![cap1](a) ![cap2](b)</code>), which Pandoc treats as inline images and renders without captions. knitr now inserts a blank line after each captioned figure except the last, so Pandoc emits a separate figure (with caption) for each image (thanks, <a href="https://github.com/atusy">@atusy</a>, <a href="https://github.com/yihui/knitr/issues/2032">#2032</a>, <a href="https://github.com/yihui/knitr/issues/1524">#1524</a>, <a href="https://github.com/yihui/knitr/issues/1760">#1760</a>).</p>
+</li>
+<li>
+<p>knitr now emits a warning when a code chunk opens a new graphics device (e.g., via <code>dev.new()</code>), because plots drawn on such devices cannot be captured by knitr and will silently fail to render in the output (thanks, <a href="https://github.com/Higgs32584">@Higgs32584</a>, <a href="https://github.com/yihui/knitr/issues/2355">#2355</a>).</p>
+</li>
+<li>
+<p><code>include_graphics()</code> now converts absolute paths to paths relative to the output directory of the rendered document (communicated by <strong>rmarkdown</strong> &gt;= 2.32 via <code>opts_knit$get('rmarkdown.output_dir')</code>) instead of knitr’s working directory (the input directory), which fixes broken image paths when the input and output directories differ (e.g., rendering to a different <code>output_dir</code>). The existence check (when <code>error = TRUE</code>) also uses the original path so that it no longer reports false negatives when <code>root.dir</code> differs from the output directory (thanks, <a href="https://github.com/naikymen">@naikymen</a> <a href="https://github.com/jameelalsalam">@jameelalsalam</a> <a href="https://github.com/cderv">@cderv</a>, <a href="https://github.com/yihui/knitr/issues/2171">#2171</a>, <a href="https://github.com/r-lib/pkgdown/issues/2334">r-lib/pkgdown#2334</a>).</p>
+</li>
+<li>
+<p><code>kable()</code> now escapes special characters (e.g., <code>&amp;</code>) in the <code>caption</code> argument for LaTeX and HTML output when <code>escape = TRUE</code> (the default), just as it does for cell content and column names. Previously, an unescaped <code>&amp;</code> in a caption could cause a fatal LaTeX compilation error (<code>! Misplaced alignment tab character &amp;.</code>) (thanks, <a href="https://github.com/mbs2016">@mbs2016</a>, <a href="https://github.com/yihui/knitr/issues/2436">#2436</a>).</p>
+</li>
+<li>
 <p>The <code>alt</code> attribute of figure images now has HTML tags stripped (via <code>xfun::strip_html()</code>) and is properly escaped for use in HTML attributes (via <code>xfun::html_escape(attr = TRUE)</code>). Previously, HTML in <code>fig.cap</code> (e.g., a link) could appear verbatim in <code>alt</code>, and double quotes in captions could break the <code>alt</code> attribute value (thanks, <a href="https://github.com/cderv">@cderv</a>, <a href="https://github.com/yihui/knitr/issues/2004">#2004</a>).</p>
+</li>
+<li>
+<p><code>knit2html()</code> now renders the HTML next to the knitted Markdown and then moves it to the output location when the output is written to a different directory, so local figure resources can still be found and embedded (previously they broke with warnings like <code>File 'figure/...png' not found</code>). For more robust rendering of R Markdown to HTML, consider <code>litedown::fuse()</code> instead (thanks, <a href="https://github.com/LeonidasZhak">@LeonidasZhak</a>, <a href="https://github.com/yihui/knitr/issues/2408">#2408</a>).</p>
 </li>
 <li>
 <p>Due to a change in Asymptote, the output file may not be recognized or included correctly (thanks, <a href="https://github.com/DeliciousRoastPotato">@DeliciousRoastPotato</a> <a href="https://github.com/shangeconnew">@shangeconnew</a>, <a href="https://github.com/yihui/knitr/issues/2025">#2025</a>).</p>
@@ -540,6 +570,10 @@
 <li>
 <p>Fixed a bug that calling <code>knit_exit()</code> could put <code>knit()</code> in a non-functioning state when there is only a single code chunk in the input (thanks, <a href="https://github.com/dlampart">@dlampart</a>, <a href="https://github.com/yihui/knitr/issues/2372">#2372</a>).</p>
 </li>
+</ul>
+<h3 id="sec:major-changes_1" class="unnumbered">MAJOR CHANGES</h3>
+<ul>
+<li><code>knit2html()</code> (and other functions that render Markdown to HTML, such as <code>stitch()</code>, <code>knit_rd()</code>, <code>knit2wp()</code>, <code>rocco()</code>, and the <code>knitr::knitr</code> vignette engine) now use <code>litedown::mark()</code> directly instead of <code>markdown::mark_html()</code>. The <strong>markdown</strong> package (&gt;= 1.3) has become a thin wrapper of <strong>litedown</strong>, so this removes the <strong>markdown</strong> dependency (<strong>litedown</strong> is used instead) without changing the HTML output. For R packages that rely on the <code>knitr::knitr</code> vignette engine, the <code>DESCRIPTION</code> file needs to declare <code>litedown</code> as a dependency (typically in <code>Suggests</code>) instead of <code>markdown</code>.</li>
 </ul>
 <h2 id="sec:knitr-1-51" class="unnumbered">knitr 1.51</h2>
 <h3 id="sec:new-features_2" class="unnumbered">NEW FEATURES</h3>
@@ -636,7 +670,7 @@
 <p>Avoid partial matching of the <code>Date/Publication</code> field when generating <code>citation('knitr')</code>, otherwise R will emit a warning when <code>options(warnPartialMatchDollar = TRUE)</code> (thanks, <a href="https://github.com/fkohrt">@fkohrt</a>, <a href="https://github.com/yihui/knitr/issues/2361">#2361</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_1" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_2" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>Unbalanced chunk delimiters (fences) in R Markdown documents are strictly prohibited now.</p>
@@ -731,7 +765,7 @@
 <p>When TinyTeX and the LaTeX package <strong>pdfcrop</strong> are installed, <code>knitr::pdf_crop()</code> is unable to find <code>pdfcrop</code> (thanks, <a href="https://github.com/dmkaplan2000">@dmkaplan2000</a>, <a href="https://github.com/rstudio/tinytex/issues/435">rstudio/tinytex#435</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_2" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_3" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>Unbalanced chunk delimiters (fences) in R Markdown documents are no longer allowed, as announced two years ago at <a href="https://yihui.org/en/2021/10/unbalanced-delimiters/">https://yihui.org/en/2021/10/unbalanced-delimiters/</a> (#2306). This means the opening delimiter must strictly match the closing delimiter, e.g., if a code chunk starts with four backticks, it must also end with four; or if a chunk header is indented by two spaces, the closing fence must be indented by exactly two spaces. For authors who cannot update their R Markdown documents for any reason at the moment, setting <code>options(knitr.unbalanced.chunk = TRUE)</code> (e.g., in <code>.Rprofile</code>) can temporarily prevent <strong>knitr</strong> from throwing an error, but it is strongly recommended that you fix the problems as soon as possible, because this workaround will be removed in future.</p>
@@ -784,7 +818,7 @@
 <p>Percent signs (<code>%</code>) in LaTeX figure captions and short captions are properly escaped now (thanks, <a href="https://github.com/s-u">@s-u</a>, <a href="https://github.com/yihui/knitr/issues/2302">#2302</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_3" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_4" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>The object <code>opts_current</code> will be restored after each code chunk has finished executing. Previously, it would not be restored, which means even for inline R expressions, <code>opts_current$get()</code> will inherit chunk options from a previous code chunk (thanks, <a href="https://github.com/rundel">@rundel</a>, <a href="https://github.com/yihui/knitr/issues/1988">#1988</a>). Besides, <code>opts_current$get('label')</code> will return a unique label for inline expressions. One possible application is to construct unique figure paths via <code>fig_path()</code> (e.g., <a href="https://github.com/ropensci/magick/issues/310">ropensci/magick#310</a>).</p>
@@ -836,7 +870,7 @@
 <p>The argument <code>col.names</code> of <code>kable()</code> can be used to specify the column name of row names now, e.g., <code>kable(head(mtcars), col.names = c(&quot;car&quot;, names(mtcars)))</code> (<code>&quot;car&quot;</code> will be the column name of row names in the first column) (thanks, <a href="https://github.com/iago-pssjd">@iago-pssjd</a>, <a href="https://github.com/yihui/knitr/issues/1933">#1933</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_4" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_5" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>Dashes (<code>-</code>) in the names of all chunk options are normalized to dots (<code>.</code>) now, e.g., <code>fig-height</code> will be converted to <code>fig.height</code>. This is to make <strong>knitr</strong> more compatible with Quarto since Quarto always use dashes in chunk option names (#2282).</li>
 </ul>
@@ -930,7 +964,7 @@
 <p>Allow concordances to be embedded in HTML output (thanks, <a href="https://github.com/dmurdoch">@dmurdoch</a>, <a href="https://github.com/yihui/knitr/issues/2200">#2200</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_5" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_6" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p><code>knit()</code> no longer prints out chunk options beneath the text progress bar while knitting a document (thanks, <a href="https://github.com/hadley">@hadley</a>, <a href="https://github.com/yihui/knitr/issues/1880">#1880</a>).</p>
@@ -1036,7 +1070,7 @@
 </li>
 </ul>
 <h2 id="sec:knitr-1-39" class="unnumbered">knitr 1.39</h2>
-<h3 id="sec:major-changes_6" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_7" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>Added an argument <code>rel_path</code> to <code>include_graphics()</code>, which defaults to <code>TRUE</code>, meaning that this function will try to convert absolute paths to relative paths automatically. If the conversion fails, it will issue a warning. If you want to suppress the conversion (and the warning), you may use <code>rel_path = FALSE</code> or set the global option <code>options(knitr.graphics.rel_path = FALSE)</code>. In the previous version of <strong>knitr</strong>, this function would always issue a warning when it detects absolute paths (thanks, <a href="https://github.com/davidski">@davidski</a> <a href="https://github.com/kendavidn">@kendavidn</a>, <a href="https://github.com/yihui/knitr/issues/2119">#2119</a>).</li>
 </ul>
@@ -1092,7 +1126,7 @@ echo 'Hello world!'
 <p>New <code>calling.handlers</code> option for <code>opts_chunk$set()</code> to register calling handlers within chunks. See <code>?evaluate::new_output_handler</code> for details.</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_7" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_8" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>The minimal required version of R was bumped from 3.2.3 to 3.3.0 (thanks, <a href="https://github.com/essemenoff">@essemenoff</a>, <a href="https://github.com/yihui/knitr/issues/2100">#2100</a>).</p>
@@ -1232,7 +1266,7 @@ The content can contain inline code like
 <li>Improved the (warning) message when unbalanced chunk delimiters are detected in R Markdown documents, to make it easier for users to fix the problem. The message now contains the line numbers of the opening fence and closing fence, as well as the opening and closing backticks. For example, the opening fence may be <code>&quot;````{r}&quot;</code> (four backticks) but the closing fence is <code>&quot;```&quot;</code> (three backticks—should also be four to match the opening fence), or the opening fence is indented <code>&quot;  ```{r}&quot;</code> but the closing fence is not <code>&quot;```&quot;</code>. Note that this warning message may become an error in the future, i.e., unbalanced chunk delimiters will no longer be allowed.</li>
 </ul>
 <h2 id="sec:knitr-1-36" class="unnumbered">knitr 1.36</h2>
-<h3 id="sec:major-changes_8" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_9" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>In <strong>knitr</strong> 1.35, if the indentation of the closing backticks does not match the indentation of the chunk header in an Rmd document, the closing backticks would not be treated as closing fence of a code chunk. This behavior has been reverted because we have discovered several cases in which the indentation was accidental. A warning message will be issued instead, and you are still recommended to fix the improper indentation if discovered.</li>
 </ul>
@@ -1266,7 +1300,7 @@ plot(cars)
 <p>The effective chunk options for the above chunk are <code>echo = FALSE</code> and <code>fig.width = 10</code>.</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_9" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_10" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>For R Markdown documents, if the chunk header is indented, the closing backticks (usually <code>```</code>) of the chunk must be indented with the same amount of spaces (thanks, <a href="https://github.com/atusy">@atusy</a>, <a href="https://github.com/yihui/knitr/issues/2047">#2047</a>). For example, the following is no longer a valid code chunk because the chunk header is indented but the closing backticks are not:</p>
@@ -1319,7 +1353,7 @@ plot(cars)
 <p>The <a href="https://yihui.org/knitr/options/">chunk option <code>cache.globals</code></a> can take values <code>TRUE</code> and <code>FALSE</code> now (in addition to a character vector). When <code>FALSE</code>, it tries to find all symbols in the code chunk, no matter if they are local or global variables. When <code>NULL</code> or <code>TRUE</code>, it tries to find all global variables (thanks, <a href="https://github.com/knokknok">@knokknok</a>, <a href="https://github.com/yihui/knitr/issues/1898">#1898</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_10" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_11" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>An error is now thrown when an inline code result is not coercible to character. This has always been the assumed behavior but it happens to be different in certain formats with unknown automatic coercion. This is now enforced to prevent any unexpected output. An inline code expression must evaluate to a character vector or an object coercible by <code>as.character()</code> (#2006).</p>
@@ -1375,7 +1409,7 @@ plot(cars)
 <ul>
 <li>Reverted the fix for <a href="https://github.com/yihui/knitr/issues/1595">#1595</a> since it caused problems in <strong>kableExtra</strong> (thanks, <a href="https://github.com/bttomio">@bttomio</a>, <a href="https://github.com/haozhu233/kableExtra/issues/607">haozhu233/kableExtra#607</a>), and applied a different fix to the original problem (i.e., add <code>{}</code> before <code>[</code>).</li>
 </ul>
-<h3 id="sec:major-changes_11" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_12" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>The internal S3 generic function <code>wrap()</code> has been renamed to <code>sew()</code>.</li>
 </ul>
@@ -1502,7 +1536,7 @@ plot(cars)
 <ul>
 <li>Line numbers in error messages are incorrect when the error occurs in a child Rmd document (thanks, <a href="https://github.com/cderv">@cderv</a> <a href="https://github.com/khughitt">@khughitt</a>, <a href="https://github.com/yihui/knitr/issues/1945">#1945</a>).</li>
 </ul>
-<h3 id="sec:major-changes_12" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_13" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>Previously <code>knit_exit()</code> in a child document would not terminate the knitting process of its parent document. Now it will terminate the whole process by default. You can use <code>knit_exit(fully = FALSE)</code> to exit the child document only (thanks, <a href="https://github.com/davidchall">@davidchall</a>, <a href="https://github.com/yihui/knitr/issues/1810">#1810</a>).</li>
 </ul>
@@ -1514,7 +1548,7 @@ plot(cars)
 <h3 id="sec:new-features_20" class="unnumbered">NEW FEATURES</h3>
 <ul>
 <li>
-<p>Added <code>knitr::hooks_*()</code> functions to get a list of output hooks for a specific format. Previously, these hooks only exist inside the <code>knitr::render_*()</code> functions, and users do not have direct access to them. Now they can be accessed directly, e.g., via <code>knitr::hooks_markdown()</code> to get a list of output hooks for R Markdown documents. You can also set the output hooks individually, e.g., <code>knitr::knit_hooks$set(knitr::hooks_markdown()['source'])</code> only sets the <em>source</em> ouput hook. See more on output hooks at <a href="https://yihui.org/knitr/hooks/#output-hooks">https://yihui.org/knitr/hooks/#output-hooks</a> and <a href="https://bookdown.org/yihui/rmarkdown-cookbook/output-hooks.html">https://bookdown.org/yihui/rmarkdown-cookbook/output-hooks.html</a> (thanks, <a href="https://github.com/cderv">@cderv</a>, <a href="https://github.com/yihui/knitr/issues/1889">#1889</a>).</p>
+<p>Added <code>knitr::hooks_*()</code> functions to get a list of output hooks for a specific format. Previously, these hooks only exist inside the <code>knitr::render_*()</code> functions, and users do not have direct access to them. Now they can be accessed directly, e.g., via <code>knitr::hooks_markdown()</code> to get a list of output hooks for R Markdown documents. You can also set the output hooks individually, e.g., <code>knitr::knit_hooks$set(knitr::hooks_markdown()['source'])</code> only sets the <em>source</em> ouput hook. See more on output hooks at <a href="https://yihui.org/knitr/hooks/#output-hooks">https://yihui.org/knitr/hooks/#output-hooks</a> and <a href="https://pkg.yihui.org/rmarkdown-cookbook/output-hooks.html">https://pkg.yihui.org/rmarkdown-cookbook/output-hooks.html</a> (thanks, <a href="https://github.com/cderv">@cderv</a>, <a href="https://github.com/yihui/knitr/issues/1889">#1889</a>).</p>
 </li>
 <li>
 <p>Added an argument <code>lib.loc</code> to <code>knitr::write_bib()</code>.</p>
@@ -1575,7 +1609,7 @@ plot(cars)
 <p>Theorem environments in <strong>bookdown</strong> fail to work with Pandoc &gt;= 2.7.3 because of an issue in the <code>block2</code> engine of <strong>knitr</strong> (rstudio/bookdown#883).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_13" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_14" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>For R Markdown documents, the default table format generated by <code>kable()</code> was changed from Pandoc’s simple tables to pipe tables. This fixes bugs <a href="https://github.com/yihui/knitr/issues/1788">#1788</a> (<code>kable()</code> fails to align columns containing wide characters) and <a href="https://github.com/yihui/knitr/issues/1817">#1817</a> (broken column headers) (thanks, <a href="https://github.com/atusy">@atusy</a>, <a href="https://github.com/yihui/knitr/issues/1830">#1830</a>).</p>
@@ -1604,7 +1638,7 @@ plot(cars)
 <ul>
 <li><code>hook_pdfcrop()</code> no longer crops images included via <code>include_graphics()</code> now (thanks, <a href="https://github.com/hpages">@hpages</a> <a href="https://github.com/yihui/knitr/issues/1797">#1797</a>, <a href="https://github.com/salim-b">@salim-b</a> <a href="https://github.com/yihui/knitr/issues/1800">#1800</a>).</li>
 </ul>
-<h3 id="sec:major-changes_14" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_15" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>If the <code>hook_pdfcrop()</code> is enabled, the non-PDF image will be cropped only if the <strong>magick</strong> package is available, otherwise it will signal a message. In the previous version, it will signal an error (thanks, <a href="https://github.com/trannhatanh89">@trannhatanh89</a>, <a href="https://github.com/yihui/knitr/issues/1796">#1796</a>).</p>
@@ -1633,7 +1667,7 @@ plot(cars)
 <p><code>hook_pdfcrop()</code> does not crop all plots when multiple graphical devices are used in a code chunk (i.e., the chunk option <code>dev</code> takes a vector of devices) due to a bug in the internal function <code>all_figs()</code> identified by <a href="https://github.com/bastistician">@bastistician</a> in <a href="https://github.com/yihui/knitr/issues/1766">#1766</a>, who also proposed a fix.</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_15" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_16" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li><code>options('width')</code> no longer affects caching. With this change, your previous cache will be invalidated if you update <strong>knitr</strong> from 1.26 to 1.27. If you prefer that changes in the R global option <code>width</code> invalidate cache (as in previous versions of <strong>knitr</strong>), you may associate it with a chunk option, e.g., <code>cache.extra = getOption('width')</code>. The reason for this change is that it is too costly to invalidate the cache when the <code>width</code> option changes—the effect of this option is only cosmetic and the code chunk output may not really rely on this option (thanks, <a href="https://github.com/jaburgoyne">@jaburgoyne</a>, <a href="https://github.com/yihui/knitr/issues/1781">#1781</a>).</li>
 </ul>
@@ -1671,7 +1705,7 @@ plot(cars)
 <p>For <code>kable(format = 'latex')</code>, a single string consisting of <code>l</code>, <code>c</code>, and <code>r</code> for the <code>align</code> argument also works now, e.g., <code>knitr::kable(head(iris), 'latex', align = 'llcrr')</code>. Previously it has to be a character vector of individual letters.</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_16" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_17" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>Reverted <a href="https://github.com/yihui/knitr/issues/1519">#1519</a> (which intended to fix <a href="https://github.com/yihui/knitr/issues/1487">#1487</a>): the <code>valign</code> argument of <code>kable(format = 'latex')</code> meant to control the vertical alignment of the inner <code>tabular</code> environment, instead of the floating position of the outer <code>table</code> environment. A separate argument named <code>position</code> has been added to control the floating position (e.g., <code>position = &quot;!b&quot;</code>).</li>
 </ul>
@@ -1692,7 +1726,7 @@ plot(cars)
 </li>
 </ul>
 <h2 id="sec:knitr-1-24" class="unnumbered">knitr 1.24</h2>
-<h3 id="sec:major-changes_17" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_18" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>The <code>input</code> argument of <code>knitr::knit()</code> must be a file path (a character string). It can no longer be connections.</p>
@@ -1748,7 +1782,7 @@ plot(cars)
 <p>The <code>...</code> argument for <code>raw_latex()</code> and <code>raw_html()</code> is actually passed to <code>asis_output()</code> now (thanks, <a href="https://github.com/GregorDeCillia">@GregorDeCillia</a>, <a href="https://github.com/yihui/knitr/issues/1716">#1716</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_18" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_19" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p><code>knitr::knit()</code> will try to read the input file with the UTF-8 encoding first. If UTF-8 doesn’t work, it will try to read with the system native encoding instead (with a warning). The <code>encoding</code> argument of <code>knitr::knit()</code> is completely ignored. In the future, only UTF-8 will be supported, and we will stop retrying with the system native encoding. The output file from <code>knitr::knit()</code> is always encoded in UTF-8.</p>
@@ -1809,7 +1843,7 @@ plot(cars)
 <p>The chunk options <code>dev = 'tikz'</code> and <code>external = FALSE</code> didn’t work in R Markdown (thanks, <a href="https://github.com/martinschmelzer">@martinschmelzer</a>, <a href="https://github.com/yihui/knitr/issues/1649">#1649</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_19" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_20" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p><code>knitr::knit()</code> starts to warn against non-UTF8 encodings (<a href="https://yihui.org/en/2018/11/biggest-regret-knitr/">Why?</a>). In the future, we will only support UTF-8 input. If your input file is not encoded in UTF-8, we strongly recommend that you re-save it with UTF-8.</p>
@@ -1888,7 +1922,7 @@ plot(cars)
 <p>Roman numerals should not be converted to arabic numerals in inline R expressions (thanks, <a href="https://github.com/rgaiacs">@rgaiacs</a>, <a href="https://github.com/yihui/knitr/issues/1625">#1625</a>).</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_20" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_21" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>For R scripts passed to <code>spin()</code>, only the UTF-8 encoding is accepted (previously it assumes the native encoding of the system).</p>
@@ -1915,7 +1949,7 @@ plot(cars)
 <ul>
 <li><code>spin()</code> now supports code chunks of the form <code>-- ---- label ----</code> allowing external SQL and Haskell files to be spun (thanks, <a href="https://github.com/ruaridhw">@ruaridhw</a>, <a href="https://github.com/yihui/knitr/issues/1492">#1492</a>).</li>
 </ul>
-<h3 id="sec:major-changes_21" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_22" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p><code>tinytex::latexmk()</code> is used to compile LaTeX plots generated by the chunk option <code>dev = 'tikz'</code> to PDF, which means you have to install the <strong>tinytex</strong> package if you use this device.</p>
@@ -1961,7 +1995,7 @@ plot(cars)
 <p>added an <code>evaluate.inline</code> hook to <code>knit_hooks</code> (thanks, <a href="https://github.com/kevinushey">@kevinushey</a>, <a href="https://github.com/yihui/knitr/issues/1443">#1443</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_22" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_23" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>the <code>python</code> engine is based on <code>reticulate::eng_python()</code> now; this means all Python code chunks are evaluated in the same Python session; if you want the old behaviour (new session for each Python code chunk), you can set the chunk option <code>python.reticulate = FALSE</code> (thanks, <a href="https://github.com/kevinushey">@kevinushey</a>, <a href="https://github.com/yihui/knitr/issues/1440">#1440</a>)</p>
@@ -1986,7 +2020,7 @@ plot(cars)
 </li>
 </ul>
 <h2 id="sec:knitr-1-17" class="unnumbered">knitr 1.17</h2>
-<h3 id="sec:major-changes_23" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_24" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>the automatic detection of chunk dependencies (via the chunk option <code>autodep = TRUE</code>) is more conservative by default now; chunk B depends on chunk A if <em>any</em> variables in B are created in A, no matter if these variables are local or global in B; you can use the chunk option <code>cache.globals</code> to manually provide a vector of variable names that should be considered “global” to avoid the dependency when local variables in B are also found in A (thanks, <a href="https://github.com/knokknok">@knokknok</a>, <a href="https://github.com/yihui/knitr/issues/1403">#1403</a>)</p>
@@ -2035,7 +2069,7 @@ plot(cars)
 <p>longest common whitespace prefix in code chunks is now stripped off along with the eventual prefix (see <a href="https://github.com/yihui/knitr/issues/1391">#1391</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_24" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_25" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>a warning will be emitted when the chunk option <code>fig.show='hold'</code> and the output format is Word (<a href="https://github.com/rstudio/bookdown/issues/249">https://github.com/rstudio/bookdown/issues/249</a>); <code>fig.show='hold'</code> will be changed to <code>'asis'</code> at the same time</p>
@@ -2114,7 +2148,7 @@ plot(cars)
 <p>introduced a mechanism to protect text output in the sense that it will not be touched by Pandoc during the conversion from R Markdown to another format; this is primarily for package developers to extend R Markdown; see <code>?raw_output</code> for details (which also shows new functions <code>extract_raw_output()</code> and <code>restore_raw_output()</code>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_25" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_26" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>the minimal version of R required for <strong>knitr</strong> is 3.1.0 now (#1269)</p>
@@ -2181,7 +2215,7 @@ plot(cars)
 <p>fixed <a href="https://github.com/yihui/knitr/issues/1250">#1250</a>: in the quiet mode, <code>knit()</code> should not emit the message “processing file …” when processing child documents (thanks, <a href="https://github.com/KZARCA">@KZARCA</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_26" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_27" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li><strong>knitr</strong> will no longer generate screenshots automatically for HTML widgets if the <strong>webshot</strong> package or PhantomJS is not installed</li>
 </ul>
@@ -2267,7 +2301,7 @@ plot(cars)
 <p>corrected the environment for evaluating R scripts in <code>stitch_rhtml()</code> and <code>stitch_rmd()</code> (thanks, <a href="https://github.com/Hughan">@Hughan</a>, <a href="https://github.com/yihui/knitr/issues/1207">#1207</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_27" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_28" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>the default value of the package option <code>eval.after</code> is changed from <code>NULL</code> to <code>fig.cap</code>, i.e. the figure caption will always be evaluated after a code chunk is evaluated (thanks, <a href="https://github.com/JoshOBrien">@JoshOBrien</a>, <a href="https://github.com/yihui/knitr/issues/1165">#1165</a>)</p>
@@ -2353,7 +2387,7 @@ plot(cars)
 <p>fixed <a href="https://github.com/yihui/knitr/issues/1119">#1119</a>: when the chunk option <code>engine != 'R'</code>, the <code>size</code> option does not work (thanks, <a href="https://github.com/cysouw">@cysouw</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_28" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_29" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>local chunk options can override options set in <code>opts_template</code> now, e.g. for <code>opts_template$set(quiet = list(echo = FALSE))</code>, and a local chunk option <code>echo = TRUE</code> will override <code>echo = FALSE</code> in <code>opts_template</code> for the current code chunk (thanks, <a href="https://github.com/aaronwolen">@aaronwolen</a>, <a href="https://github.com/yihui/knitr/issues/1140">#1140</a>)</li>
 </ul>
@@ -2382,7 +2416,7 @@ plot(cars)
 <p>added two language engines <code>mysql</code> and <code>psql</code> (thanks, <a href="https://github.com/beanumber">@beanumber</a>, <a href="https://github.com/yihui/knitr/issues/1076">#1076</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_29" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_30" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>the two hook functions <code>hook_rgl()</code> and <code>hook_webgl()</code> have been moved from <strong>knitr</strong> to the <strong>rgl</strong> package (v0.95.1247) (thanks, <a href="https://github.com/dmurdoch">@dmurdoch</a>)</p>
@@ -2396,7 +2430,7 @@ plot(cars)
 <li>the HTML code generated for FFmpeg animations did not work through Pandoc conversion (thanks, <a href="https://github.com/s-fiebig">@s-fiebig</a>, <a href="https://github.com/yihui/knitr/issues/1067">#1067</a>)</li>
 </ul>
 <h2 id="sec:knitr-1-10-5" class="unnumbered">knitr 1.10.5</h2>
-<h3 id="sec:major-changes_30" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_31" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>this version is a patch release due to a few changes in handling the <code>params</code> field of the YAML metadata, including
 <ul>
@@ -2448,7 +2482,7 @@ plot(cars)
 <p>added a new language engine named <code>lein</code> to support Clojure (thanks, <a href="https://github.com/kindlychung">@kindlychung</a>, <a href="https://github.com/yihui/knitr/issues/940">#940</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_31" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_32" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>the minimal required version of R is 3.0.2 now, and you are recommended to use the latest version of R when possible</li>
 </ul>
@@ -2474,7 +2508,7 @@ plot(cars)
 <p><code>knit2wp()</code> can update an existing post or create a page now (thanks, <a href="https://github.com/jaredlander">@jaredlander</a>, <a href="https://github.com/yihui/knitr/issues/916">#916</a>, <a href="https://github.com/yihui/knitr/issues/917">#917</a>)</p>
 </li>
 <li>
-<p>added an engine <code>stan</code> to support <a href="http://mc-stan.org">Stan</a> through the <strong>rstan</strong> package; see <a href="http://rpubs.com/jrnold/knitr-stan">http://rpubs.com/jrnold/knitr-stan</a> for an example (thanks, <a href="https://github.com/jrnold">@jrnold</a>, <a href="https://github.com/yihui/knitr/issues/903">#903</a>)</p>
+<p>added an engine <code>stan</code> to support <a href="https://mc-stan.org/">Stan</a> through the <strong>rstan</strong> package; see <a href="http://rpubs.com/jrnold/knitr-stan">http://rpubs.com/jrnold/knitr-stan</a> for an example (thanks, <a href="https://github.com/jrnold">@jrnold</a>, <a href="https://github.com/yihui/knitr/issues/903">#903</a>)</p>
 </li>
 <li>
 <p>for the <code>tikz</code> engine, the path to the <code>convert</code> utility of ImageMagick can be specified via the chunk option <code>engine.opts</code>, e.g. <code>engine.opts = list(convert = 'path/to/convert')</code> (thanks, <a href="https://github.com/mienkoja">@mienkoja</a>, <a href="https://github.com/yihui/knitr/issues/897">#897</a>)</p>
@@ -2483,7 +2517,7 @@ plot(cars)
 <p>similarly, more command line arguments to <code>convert</code> can be specified via, for example, <code>engine.opts = list(convert.opts = '-density 300')</code> (#896)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_32" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_33" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>when the chunk option <code>dev = 'png'</code>, <code>grDevices::png()</code> is used to record plots, instead of the default PDF null device (thanks, <a href="https://github.com/yixuan">@yixuan</a>, <a href="https://github.com/yihui/knitr/issues/729">#729</a>)</p>
@@ -2635,7 +2669,7 @@ plot(cars)
 <p>fixed <a href="https://github.com/yihui/knitr/issues/844">#844</a>: when the <code>digits</code> argument is a vector and <code>x</code> is a numeric matrix, <code>kable(x)</code> did not work (thanks, <a href="https://github.com/dmenne">@dmenne</a>, <a href="https://github.com/yihui/knitr/issues/844">#844</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_33" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_34" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>the <code>knit()</code> function no longer modifies R’s default <code>options(digits)</code> from 7 to 4, since it may lead to confusion especially when printing <code>summary()</code> output; for those who want the old behavior, you must set <code>options(digits = 4)</code> at the beginning of your document (thanks, John Honaker, <a href="https://github.com/yihui/knitr/issues/777">#777</a>)</p>
@@ -2816,7 +2850,7 @@ plot(cars)
 <p><code>%\documentclass{}</code> was mistakenly treated as the specification of the document class instead of a comment in a LaTeX document (thanks, Jarad Niemi, <a href="https://github.com/yihui/knitr/issues/713">#713</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_34" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_35" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>the default value for the chunk option <code>tidy</code> is <code>FALSE</code> now, which means the R source code in chunks will no longer be reformatted by <code>formatR::tidy.source()</code> by default; this feature must be explicitly turned on by <code>tidy=TRUE</code>, and it has brought a lot of confusion in the past, so it is perhaps a good idea not to reformat the source code by default</p>
@@ -2898,7 +2932,7 @@ plot(cars)
 <p>fixes the bug reported at <a href="http://stackoverflow.com/q/18992260/559676">http://stackoverflow.com/q/18992260/559676</a>; <code>render_jekyll('prettify')</code> should have pasted the source code lines into one character string</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_35" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_36" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>when the chunk option <code>cache=2</code>, the recorded plots (i.e. display lists) will no longer be cached, and the figure files will be assumed to exist the next time the document is compiled, otherwise the cache will be purged and the chunk needs to be recomputed; this will save some disk space and avoid bugs like <a href="https://github.com/yihui/knitr/issues/588">#588</a> (thanks, <a href="https://github.com/knokknok">@knokknok</a>)</li>
 </ul>
@@ -2952,7 +2986,7 @@ plot(cars)
 <p>for LaTeX and HTML output, syntax highlighting can be done for languages besides R (e.g. Python, Perl, …); this is achieved by <code>highr::hi_andre()</code>, so Andre Simon’s Highlight must be installed, otherwise <strong>knitr</strong> will fall back to verbatim output for source code; see <a href="https://github.com/yihui/knitr-examples/blob/master/098-highlight-python.Rnw">https://github.com/yihui/knitr-examples/blob/master/098-highlight-python.Rnw</a> for an example (#495)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_36" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_37" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p><strong>knitr</strong> formally depends on the <strong>highr</strong> package now (for syntax highlighting of LaTeX and HTML)</p>
@@ -3065,7 +3099,7 @@ plot(cars)
 <p>fixed <a href="https://github.com/yihui/knitr/issues/565">#565</a>: added the <code>envir</code> argument to <code>spin()</code> so that the code is evaluated in the correct environment by default (thanks, <a href="https://github.com/GillesSanMartin">@GillesSanMartin</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_37" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_38" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p><code>purl()</code> will write the chunk headers in <code># ---- label, opts ----</code> instead of <code># [@knitr](https://github.com/knitr) label, opts</code>, i.e. <code>@knitr</code> was changed to four dashes <code>----</code>; similarly, <code>read_chunk()</code> will use the pattern <code># ---- label ----</code> to read external code (the old syntax <code># [@knitr](https://github.com/knitr)</code> is still preserved for compatibility); the main reason for this change is that RStudio uses four dashes in R comments as section headings, so that it is possible to fold sections of R</p>
@@ -3176,7 +3210,7 @@ plot(cars)
 <p>fixed an encoding problem (<code>CP950</code>) for Hong Kong Windows users reported at <a href="http://bit.ly/16RQL5E">http://bit.ly/16RQL5E</a></p>
 </li>
 </ul>
-<h3 id="sec:major-changes_38" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_39" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>all child documents are inserted into the parent document as character strings of the (compiled) content, instead of being saved into files (e.g. <code>\input{foo-child.tex}</code>); no matter how many child documents there are, only one main output file will be generated; the package option <code>child.command</code> was removed accordingly since it is no longer used</p>
@@ -3250,7 +3284,7 @@ plot(cars)
 <p>child documents now inherit the encoding parameter from their parent document, i.e. the <code>encoding</code> value in <code>knit(..., encoding = ?)</code> is applied to <code>knit_child()</code>; note this assumes the parent document and the child documents use the same encoding (thanks, Henrik Nyhus)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_39" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_40" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>empty inline expressions are no longer recognized, e.g. <code>\Sexpr{}</code> will not be parsed; this allows one to write such markers in tutorials (e.g. <code>&lt;!--rinline --&gt;</code> and <code>`r `</code>); internally <code>all_patterns$foo$inline.code</code> was changed</p>
@@ -3308,7 +3342,7 @@ plot(cars)
 <p>the chunk label is used as the id of the div element in R HTML output, e.g. <code>&lt;div id='chunk-label'&gt;...&lt;/div&gt;</code></p>
 </li>
 </ul>
-<h3 id="sec:major-changes_40" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_41" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>(IMPORTANT) the internal compatibility with Sweave has been dropped as scheduled in the last version, and the <strong>knitr</strong> parser was greatly simplified accordingly; Sweave users can call the function <code>Sweave2knitr()</code> to convert old Rnw files to <strong>knitr</strong> files before running <code>knit()</code></p>
@@ -3431,7 +3465,7 @@ plot(cars)
 <p>added a new function <code>set_alias()</code> as a wrapper to <code>opts_knit$set(aliases = ...)</code>, e.g. <code>set_alias(w = 'fig.width')</code> sets <code>w</code> as an alias for the chunk option <code>fig.width</code></p>
 </li>
 </ul>
-<h3 id="sec:major-changes_41" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_42" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>global options are strongly recommended to be set via real R code <code>opts_chunk$set(opt = value)</code> in a code chunk instead of the old syntax in text chunks like <code>\SweaveOpts{opt = value}</code>, or <code>&lt;!--roptions opt=value--&gt;</code>, etc, which will be deprecated in the next version; this will make it cleaner and safer to parse the source documents, e.g. we can write arbitrarily complicated expressions like <code>opts_chunk$set(fig.width = if (foo == 'beamer') { 5 } else { 7 })</code> which is impossible in the old syntax; if you still use the old syntax like <code>\SweaveOpts{}</code>, you will see a warning with a pause of 10 seconds</p>
@@ -3523,7 +3557,7 @@ plot(cars)
 <p><code>persp()</code> plots were not recognized in the last version (thanks, Jeffrey Racine)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_42" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_43" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>leading spaces are allowed in chunk headers now, e.g. in the past <code>&lt;&lt;&gt;&gt;=</code> must appear in the beginning of a line, but now we can indent the chunk header by a number of white spaces; this amount of spaces will be stripped off the chunk if the whole chunk is indented (#236) (thanks, <a href="https://github.com/jamiefolson">@jamiefolson</a> and Vitalie Spinu)</p>
@@ -3648,7 +3682,7 @@ plot(cars)
 <p>fixed <a href="https://github.com/yihui/knitr/issues/342">#342</a>: when <code>eval=FALSE</code>, line breaks in the source code were missing</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_43" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_44" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>if the chunk label contains non-alphanumeric characters (except <code>-</code> and <code>_</code>), these characters will be replaced by <code>_</code> in the figure filenames (if there are any) and a warning will be issued; this is to guarantee the figure filenames are valid to LaTeX (#321) (thanks, (Roman Lustrik)</p>
@@ -3701,7 +3735,7 @@ plot(cars)
 <li>the example using other languages was updated to show how some chunk options (<code>eval</code>, <code>echo</code> and <code>results</code>) also work for foreign languages: <a href="https://github.com/yihui/knitr/blob/master/inst/examples/knitr-lang.Rmd">https://github.com/yihui/knitr/blob/master/inst/examples/knitr-lang.Rmd</a></li>
 </ul>
 <h2 id="sec:knitr-0-6-3" class="unnumbered">knitr 0.6.3</h2>
-<h3 id="sec:major-changes_44" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_45" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>this is an urgent patch version for CRAN: the dependencies on <strong>highlight</strong> and <strong>parser</strong> were removed because these two packages were orphaned on CRAN; now <strong>knitr</strong> uses a naive syntax highlighter for LateX and HTML output if <strong>highlight</strong> is not available, which has a similar appearance with <strong>highlight</strong>; when the <strong>parser</strong> package is not available, users should be careful with the chunk option <code>tidy=TRUE</code>: <code>replace.assign</code> may not work as expected; see the NEWS of <strong>formatR</strong> for details: <a href="https://github.com/yihui/formatR/blob/master/NEWS">https://github.com/yihui/formatR/blob/master/NEWS</a>; you are welcome to improve the naive highlighter: <a href="https://github.com/yihui/knitr/tree/master/R/highlight.R">https://github.com/yihui/knitr/tree/master/R/highlight.R</a></li>
 </ul>
@@ -3792,7 +3826,7 @@ plot(cars)
 <p>better preserve plot sizes in interactive sessions (#258)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_45" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_46" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p><code>.Random.seed</code> is not cached any more because of weird problems due to lazy loading (#248 and <a href="https://github.com/yihui/knitr/issues/253">#253</a>); users should use <code>set.seed()</code> to make sure reproducibility of random simulations; the chunk output is cached in a <code>.RData</code> database instead of a lazy-load database to avoid problems in <a href="https://github.com/yihui/knitr/issues/253">#253</a></p>
@@ -3878,7 +3912,7 @@ plot(cars)
 <p><code>hook_pdfcrop()</code> also supports cropping other image formats like PNG or JPEG through ImageMagick (<code>convert -trim</code>) (#203) (thanks, <a href="https://github.com/r2d3">@r2d3</a>)</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_46" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_47" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p><strong>knitr</strong> will completely stop when duplicated labels are found and the corresponding chunks are non-empty; in the previous version, only a warning is given and R code in later chunks will override previous chunks (#185) (thanks, Randall Pruim)</p>
@@ -4076,7 +4110,7 @@ plot(cars)
 <p>the package website allows comments now</p>
 </li>
 </ul>
-<h3 id="sec:major-changes_47" class="unnumbered">MAJOR CHANGES</h3>
+<h3 id="sec:major-changes_48" class="unnumbered">MAJOR CHANGES</h3>
 <ul>
 <li>
 <p>the starting pattern of normal texts in an Rnw document is <code>^@\\s*%*</code> instead of <code>^@\\s*$</code> now, meaning you can write <code>@ % a comment</code> to end a code chunk (this is consistent with Sweave)</p>
@@ -4172,14 +4206,14 @@ based on an R script)</p>
 </div>
 <footer><div class="flex-col">
 <p>Developed by <a href="https://yihui.org">Yihui Xie</a></p>
-<p>Site built with <a href="https://github.com/yihui/litedown">litedown</a> v0.10.1</p>
+<p>Site built with <a href="https://github.com/yihui/litedown">litedown</a> v0.11.3</p>
 </div></footer>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/js/sidenotes.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/js/appendix.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/js/toc-highlight.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/js/copy-button.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/js/heading-anchor.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.69/js/pages.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/js/sidenotes.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/js/appendix.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/js/toc-highlight.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/js/copy-button.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/js/heading-anchor.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils@1.14.73/js/pages.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js" defer></script>
 </body>
